@@ -19,8 +19,8 @@ public class Woman extends Person{
     public void deregisterPartnership(Boolean isDeregister, Man partner){
         if(isDeregister){
             setLastName(this.maidenName);
-            setPartner("No");
-            partner.setPartner("No");
+            setPartner("Single");
+            partner.setPartner("Single");
         }
     }
 
