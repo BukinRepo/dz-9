@@ -3,6 +3,7 @@ public class Person {
     private String lastName;
     private int age;
     private String partner;
+    private Boolean isRetired = false;
 
     public Person(String firstName, String lastName, int age, String partner) {
         this.firstName = firstName;
@@ -33,5 +34,13 @@ public class Person {
 
     public void setPartner(String partner) {
         this.partner = partner;
+    }
+
+    public Boolean isRetired() {
+        return isRetired;
+    }
+
+    public void setRetired(Boolean retired) {
+        isRetired = retired;
     }
 }

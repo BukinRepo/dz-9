@@ -1,11 +1,10 @@
 public class Woman extends Person{
-    private Boolean isRetired = false;
     private String maidenName;
 
     public Woman(String firstName, String lastName, int age, String partner) {
         super(firstName, lastName, age, partner);
         if(age>=60){
-            this.isRetired = true;
+            setRetired(true);
         }
     }
 
@@ -22,9 +21,5 @@ public class Woman extends Person{
             setPartner("Single");
             partner.setPartner("Single");
         }
-    }
-
-    public Boolean isRetired() {
-        return this.isRetired;
     }
 }
